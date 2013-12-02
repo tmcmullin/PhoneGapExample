@@ -22,6 +22,7 @@ var app = {
 		this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
     	var self = this;
     	this.store = new MemoryStore(function() {
+			self.showAlert('Store Initialized', 'Info');
 	        self.renderHomeView();
 	    });
 	},
